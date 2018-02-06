@@ -1,3 +1,4 @@
+/*---------------Flexbox-principal----------------*/
 .Cont-Prin{
   display: flex;
   flex-direction: row;
@@ -10,6 +11,11 @@ ul {
   list-style-type: none;
 }
 
+article ul {
+  list-style-type: square;
+}
+
+/*---------------------Aside-------------------*/
 .aside{
   background-color: #647087;
   display: flex;
@@ -28,6 +34,9 @@ ul {
 .aside section h2:first-child{
   border-bottom: 2px solid white;
 }
+
+#profile-pic img {
+  border-radius: 50px;
 
 /*---------------------MAIN-------------------*/
 .main section > h2{
@@ -62,23 +71,3 @@ article h4{
 article ul{
     list-style-type: square;
 }
-
-/* *{
-  color: red;
-}
-
-p {
-  color: blue;
-}
-
-.bonito{
-  background-color: : lightblue;
-}
-
-article ul {
-  list-style-type: square;
-}
-
-#profile-pic img {
-  border-radius: 50px;
-}*/
