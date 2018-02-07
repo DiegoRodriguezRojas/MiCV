@@ -28,7 +28,7 @@ article ul {
 
 .aside h2{
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .aside section h2:first-child{
@@ -37,17 +37,20 @@ article ul {
 
 #profile-pic img {
   border-radius: 50px;
+}
 
 /*---------------------MAIN-------------------*/
+
 .main section > h2{
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
-.hero{
+.hero {
   background-color: #F7DDC3;
   box-shadow: 3px 3px 30px 5px #647087 inset;
 }
+
 .hero h2{
   color: white;
   border-top: 2px solid white;
@@ -56,7 +59,7 @@ article ul {
 }
 
 .about-me{
-  background-color: #F
+  background-color: #F7DDC3;
 }
 
 .about-me h2{
