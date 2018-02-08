@@ -1,6 +1,7 @@
-/*---------------Flexbox-principal----------------*/
+/*-------------------Layout---------------------*/
 .Cont-Prin{
   display: flex;
+  width: 1200px;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
@@ -15,11 +16,17 @@ article ul {
   list-style-type: square;
 }
 
+article h3,
+article h4{
+  font-weight: bold;
+}
+
 /*---------------------Aside-------------------*/
 .aside{
   background-color: #647087;
   display: flex;
   flex-direction: column;
+  width 30%;
 }
 
 .aside *{
@@ -29,15 +36,14 @@ article ul {
 .aside h2{
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.aside section h2:first-child{
   border-bottom: 2px solid white;
 }
 
 #profile-pic img {
   border-radius: 50px;
 }
+
+
 
 /*---------------------MAIN-------------------*/
 
@@ -49,28 +55,38 @@ article ul {
 .hero {
   background-color: #F7DDC3;
   box-shadow: 3px 3px 30px 5px #647087 inset;
+  padding: 15% 0;
+  text-align: center;
 }
 
 .hero h2{
   color: white;
   border-top: 2px solid white;
-  text-transform: none;
-  letter-spacing: none;
+  text-transform: uppercase;
+  letter-spacing: 15px;
 }
 
-.about-me{
+.hero h1{
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+
+.about-me p{
   background-color: #F7DDC3;
+  line-height: 1.5pm;
+  padding: 5px;
 }
 
 .about-me h2{
   background-color: white;
 }
 
-article h3,
-article h4{
-  font-weight: bold;
+.referencias{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-article ul{
-    list-style-type: square;
+.referencias article{
+  width: 50%;
+  text-align: center;
 }
