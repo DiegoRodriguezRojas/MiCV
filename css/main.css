@@ -1,5 +1,5 @@
 /*-------------------Layout---------------------*/
-.Cont-Prin{
+.cont-Prin{
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -15,8 +15,7 @@ ul {
 
 .aside{
   background-color: #505050;
-  display: flex;
-  flex-direction: column;
+  margin-right: 3%;
   width 30%;
 }
 
@@ -59,24 +58,43 @@ meter::-webkit-meter-bar{
   background-color: #9ED7D8;
 }
 
-/*---------------------ICON-------------------*/
+/* ICON */
+#c-s li{
+  line-height: 3em;
+}
+
+.social-item::before{
+  padding-right: 2em;
+}
 .fb::before{
+  content: "\f2ce";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.ub::before{
   content: "\f02d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-size: 2em;
 }
 
-.social-itemfb::before{
-  padding-right: 15px;
+.tl::before{
+  content: "\f2bb";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.cr::before{
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
 }
 
 /*---------------------MAIN-------------------*/
-.main{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 25;
-}
-
 .main section > h2{
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -102,7 +120,7 @@ meter::-webkit-meter-bar{
 }
 
 .about-me p{
-  background-color: #F7DDC3;
+  background-color: #77AFC3;
   line-height: 1.5em;
   padding: 5px;
 }
@@ -111,12 +129,19 @@ meter::-webkit-meter-bar{
   background-color: white;
 }
 
+/* Referencias */
+
 .referencias{
   display: flex;
   flex-wrap: wrap;
+  background-color: #77AFC3;
 }
 
 .referencias article{
   width: 50%;
   text-align: center;
+}
+
+.referencias figcaption{
+  font-weight: bold;
 }
