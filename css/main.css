@@ -11,18 +11,10 @@ ul {
   list-style-type: none;
 }
 
-article ul {
-  list-style-type: square;
-}
-
-article h3,
-article h4{
-  font-weight: bold;
-}
-
 /*---------------------Aside-------------------*/
+
 .aside{
-  background-color: #647087;
+  background-color: #505050;
   display: flex;
   flex-direction: column;
   width 30%;
@@ -38,11 +30,19 @@ article h4{
   border-bottom: 2px solid white;
 }
 
+.aside p{
+  padding-left: 1.8em;
+}
+
 #profile-pic img {
-  border-radius: 50px;
-  width: 100px;
+  border-radius: 150px;
+  width: 300px;
   height: auto;
   align-items: center;
+}
+
+.aside li{
+  line-height: 2em;
 }
 
 meter{
@@ -51,14 +51,23 @@ meter{
 }
 meter::-webkit-meter-optimum-value{
   background: none;
-  background-color: red;
+  background-color: #00C0D4;
+}
+
+meter::-webkit-meter-bar{
+  background: none;
+  background-color: #9ED7D8;
 }
 
 /*---------------------ICON-------------------*/
 .fb::before{
-  content: "\f082";
+  content: "\f02d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+
+.social-itemfb::before{
+  padding-right: 15px;
 }
 
 /*---------------------MAIN-------------------*/
@@ -74,8 +83,8 @@ meter::-webkit-meter-optimum-value{
 }
 
 .hero {
-  background-color: #F7DDC3;
-  box-shadow: 3px 3px 30px 5px #647087 inset;
+  background-color: #505050;
+  box-shadow: 20px 20px 30px 5px #424242 inset;
   padding: 15% 0;
   text-align: center;
 }
@@ -94,7 +103,7 @@ meter::-webkit-meter-optimum-value{
 
 .about-me p{
   background-color: #F7DDC3;
-  line-height: 1.5pm;
+  line-height: 1.5em;
   padding: 5px;
 }
 
